@@ -1,7 +1,8 @@
 # 🤖 TELEGRAM BOT on FastAPI
 
 
-This project is a Telegram bot that uses FastAPI as the backend, operates via polling, is configured through a .env or YAML file, and includes basic command handling logic and tests.
+This project is Personal Telegram Bot for a single user.
+It works as a handy tool for quick access to data by item code or product name.
 
 ---
 
@@ -9,10 +10,7 @@ This project is a Telegram bot that uses FastAPI as the backend, operates via po
 
 - 🐍 Python 3.10+
 - ⚡ FastAPI
-- 📡 `python-telegram-bot` (polling mode)
-- 🔧 `pydantic` for configuration
-- ✅ `pytest` for tests
-- 📁 `.env` or `config.yaml` for configuration
+- ✅ pytest
 
 ---
 
@@ -35,17 +33,25 @@ git clone the-link-from-your-forked-repo
 Create a branch for the solution and switch on it
 git checkout -b develop
 
-If you are using PyCharm - it may propose you to automatically create venv for your project and install requirements in it, but if not:
-python -m venv venv
-venv\Scripts\activate (on Windows)
-source venv/bin/activate (on macOS)
-pip install -r requirements.txt
+In this project we use uv package manager. 
+If you don't use it before, you can install it with standalone installers:
+# On macOS and Linux.
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# On Windows.
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+Or, from PyPI:
+# With pip.
+pip install uv
+# Or pipx.
+pipx install uv
+
+uv venv              # Create a virtual environment
+source .venv/bin/activate  # Activate the environment (on Linux/macOS)
+💡 On Windows, use:
+.\.venv\Scripts\activate
+uv add fastapi uvicorn     # Add required libraries
 
 
 # ⚠️Tip: Never store your bot token directly in the code!
 
-
-## 📚 Usfull links
-- [Documentation Telegram Bot API](https://core.telegram.org/bots/api)
-- [FastAPI Docs](https://fastapi.tiangolo.com/)
-- [python-telegram-bot] (https://github.com/python-telegram-bot/python-telegram-bot)
