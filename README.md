@@ -50,7 +50,8 @@ uv venv              # Create a virtual environment
 source .venv/bin/activate  # Activate the environment (on Linux/macOS)
 💡 On Windows, use:
 .\.venv\Scripts\activate
-uv add fastapi uvicorn     # Add required libraries
+
+uv sync    # Install all dependencies from lock file
 
 
 # ⚠️Tip: Never store your bot token directly in the code!
