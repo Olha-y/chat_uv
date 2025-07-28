@@ -1,4 +1,4 @@
-# 🤖 TELEGRAM BOT on FastAPI
+# TELEGRAM BOT on FastAPI
 
 
 This project is Personal Telegram Bot for a single user.
@@ -6,15 +6,15 @@ It works as a handy tool for quick access to data by item code or product name.
 
 ---
 
-## 📦 Technology
+## Technology
 
-- 🐍 Python 3.10+
-- ⚡ FastAPI
-- ✅ pytest
+- Python 3.10+
+- FastAPI
+- pytest
 
 ---
 
-## 🚀 Functionality
+## Functionality
 
 - Communication via the Telegram Bot API
 - Launched using polling (webhook support planned)
@@ -24,14 +24,7 @@ It works as a handy tool for quick access to data by item code or product name.
 
 ---
 
-## 🛠️ Instalation
-
-```bash
-Clone the forked repo
-git clone the-link-from-your-forked-repo
-
-Create a branch for the solution and switch on it
-git checkout -b develop
+## Instalation
 
 In this project we use uv package manager. 
 If you don't use it before, you can install it with standalone installers:
@@ -54,5 +47,5 @@ source .venv/bin/activate  # Activate the environment (on Linux/macOS)
 uv sync    # Install all dependencies from lock file
 
 
-# ⚠️Tip: Never store your bot token directly in the code!
+# Tip: Never store your bot token directly in the code!
 
