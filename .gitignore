@@ -15,3 +15,10 @@ __pycache__/
 *.pem
 mongo_data/
 db/
+bot/media/files/
+bot/media/images/
+.DS_Store
+/bot/media
+**/images/
+**/files/
+app/test_products.json
