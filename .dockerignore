@@ -14,3 +14,10 @@ __pycache__/
 .python-version
 mongo_data/
 db/
+bot/media/images/
+bot/media/files/
+.DS_Store
+bot/media/
+**/images/
+**/files/
+app/test_products.json
